@@ -5,12 +5,15 @@ __author__ = 'David Poslt'
 import random
 
 charts = 'abcdefghijklmnopqrstuvwxyz1234567890#@!'
+'''
 delka = 0
-retezec = []
+#retezec = []
 
 while delka <=11:
     delka +=1
     retezec.append(random.choice(charts))
+'''
 
+retezec = random.sample(charts,12)
 
-print(*retezec)
+print(''.join(retezec))
