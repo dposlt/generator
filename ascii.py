@@ -17,6 +17,8 @@ class ASCII:
 
 getChar = ASCII.showASCITable()
 
+'''
 znak = 88
 if znak in getChar:
     print(getChar[znak])
+'''
