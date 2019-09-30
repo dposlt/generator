@@ -5,10 +5,10 @@ __author__ = 'David Poslt'
 import random
 import pyautogui
 
-charts = 'abcdefghijklmnopqrstuvwxyz1234567890#@!'
-
+charts = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 position = []
+
 def mousePosition():
     import sys
     count = 16
@@ -27,6 +27,23 @@ def mousePosition():
 
 
     return position
-mousePosition()
 
-print(position)
+MyPass = []
+def convertToChar(number):
+    for i in number:
+        #i = i.strip()
+
+        if int(i) > 33 and int(i) < 126:
+            #i = i[:-1]
+            i = int(i)
+            MyPass.append(chr(i))
+        elif int(i) !=32 :
+            i = int(i)
+            MyPass.append(chr(i))
+
+
+
+
+convertToChar(mousePosition())
+
+print(*MyPass)
