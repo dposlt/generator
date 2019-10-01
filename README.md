@@ -1,6 +1,5 @@
 **Passwords generator**
 
-https://img.shields.io/codeclimate/coverage/dposlt/master
 
 Description:
 Passwords generator gets parametrs with mouse position and converto to ascii.
