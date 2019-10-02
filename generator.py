@@ -22,11 +22,13 @@ def mousePosition():
             positionX = int(positionX[:-1])
             positionY = int(positionY[:-1])
 
-            if positionX in ASCII.showASCITable():
-                return ASCII.showASCITable()[positionX]
-            elif positionY in ASCII.showASCITable():
-                return ASCII.showASCITable()[positionY]
+
+            if positionX in ASCII.showASCITable() and positionY in ASCII.showASCITable():
+                position.append(ASCII.showASCITable()[positionX])
+
+                position.append(ASCII.showASCITable()[positionY])
 
 
-print(mousePosition())
-#mousePosition()
+
+mousePosition()
+print(position)
